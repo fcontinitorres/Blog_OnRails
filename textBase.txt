@@ -1,0 +1,58 @@
+Site para mostrar trabalhos e posts, para apenas um usuario.
+Obs: So temos um usuario pq ele tem que editar e deletar posts, so faz isso logado
+
+User Stories:
+	user can create a post
+	user can delete e edit a post
+	user want show hers projects pro other persons
+	etc...
+
+Features do Site
+	Posts:
+		Create/Edit/Destroy
+		Markdown
+		Syntax highlighting
+		Comments
+	Projects:
+		Create/Edit/Destroy
+	Contact
+		Contact form
+		Sendgrid
+	User (Devise)
+
+Models:
+	Post
+		title:string
+		content:string
+	Project
+		title:string
+		description:text
+		link:string
+	User
+		Devise
+
+Pages
+	Home
+	posts#index
+	post#show
+	project#index
+	project#show
+	contatc
+	tela de sucesso de mensagem enviada
+
+	signIn
+	CriatePost
+	EditPost
+	CreateProject
+	EditProject
+_____________________________________________________________________________________________________________
+
+Start Programing
+
+Inicia criando um html do home e copiado o style que ele criou no photoshop.
+Ele cria o css em scss e usa o CODEKIT para intepretação, ja q esta trabalhando localmente
+
+Ele usa um scss NORMALIZE para padronizar todos os browers o start do style (mto LEGAL). Buscar no google NORMALIZE CSS
+Para usar ele  cria um novo scss file nome: _normalize.scss, cola o conteudo do normalize. Agora tem q importa esse arquivo dentro do scss que estamos fazendo style. @import 'normalize';
+
+https://www.youtube.com/watch?v=_JM15ftbivQ&index=9&list=PL23ZvcdS3XPK9Y4DRU-BiJtiY5L_QhUUq
